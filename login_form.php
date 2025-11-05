@@ -9,37 +9,37 @@ $gender=$_POST['gender'];
 
 if($user_name=='')
 {
-echo "Please enter your name <a href='reg_form.html'> GO BACK </a> ";
+echo "Please enter your name <a href='index.html'> GO BACK </a> ";
 exit();
 }
 
 if($user_email=='')
 {
-echo "Please enter your email <a href='reg_form.html'> GO BACK </a> ";
+echo "Please enter your email <a href='index.html'> GO BACK </a> ";
 exit();
 }
 
 if($user_password=='')
 {
-echo "Please enter your password <a href='reg_form.html'> GO BACK </a> ";
+echo "Please enter your password <a href='index.html'> GO BACK </a> ";
 exit();
 }
 
 if($user_confirm_password=='')
 {
-echo "Please confirm your password <a href='reg_form.html'> GO BACK </a> ";
+echo "Please confirm your password <a href='index.html'> GO BACK </a> ";
 exit();
 }
 
 if($country_name=='null')
 {
-echo "Please choose your country <a href='reg_form.html'> GO BACK </a> ";
+echo "Please choose your country <a href='index.html'> GO BACK </a> ";
 exit();
 }
 
 if($gender=='null')
 {
-echo "Please choose your gender <a href='reg_form.html'> GO BACK </a> ";
+echo "Please choose your gender <a href='index.html'> GO BACK </a> ";
 exit();
 }
 

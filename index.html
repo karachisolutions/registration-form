@@ -1,61 +1,99 @@
 <html>
-<head><title> Registration Form </title></head>
+
+<head>
+	<title> Registration Form </title>
+</head>
+
 <body>
-<form method="post" action="login_form.php">
-<table border="10" width="1000" align="center">
-<tr>
-<td colspan="2" align="center"> Registration Form </td>
-</tr>
+	<form method="post" action="login_form.php">
+		<table border="10" width="1000" align="center">
+			<tr>
+				<td colspan="2" align="center"> Registration Form </td>
+			</tr>
 
-<tr>
-<td> Enter User Name </td>
-<td> <input type="text" name="user_name"/> </td>
-</tr>
+			<tr>
+				<td> Enter User Name </td>
+				<td> <input type="text" name="user_name" /> </td>
+			</tr>
 
-<tr>
-<td> Enter User Email </td>
-<td> <input type="text" name="user_email"/> </td>
-</tr>
+			<tr>
+				<td> Enter User Email </td>
+				<td> <input type="text" name="user_email" size="5" maxlength="30" /> </td>
+			</tr>
 
-<tr>
-<td> Enter Password </td>
-<td> <input type="password" name="user_password"/> </td>
-</tr>
+			<tr>
+				<td> Enter Password </td>
+				<td> <input type="password" name="user_password" /> </td>
+			</tr>
 
-<tr>
-<td> Confirm Password </td>
-<td> <input type="password" name="user_confirm_password"/> </td>
-</tr>
+			<tr>
+				<td> Confirm Password </td>
+				<td> <input type="password" name="user_confirm_password" /> </td>
+			</tr>
 
-<tr>
-<td> Select Country </td>
-<td>
-<select name="country_name">
-<option value="null"> Select Any Country </option>
-<option value="pak"> Paksitan </option>
-<option value="ind"> India </option>
-<option value="chi"> China </option>
-<option value="jap"> Japan </option>
-</select>
-</td>
-</tr>
+			<tr>
+				<td> Select Country </td>
+				<td>
+					<select name="country_name">
+						<option value="null"> Select Any Country </option>
+						<option value="pak"> Paksitan </option>
+						<option value="ind"> India </option>
+						<option value="chi"> China </option>
+						<option value="jap"> Japan </option>
+					</select>
+				</td>
+			</tr>
 
-<tr>
-<td> Select Gender </td>
-<td>
-<select name="gender">
-<option value="null"> Select Gender </option>
-<option value="male"> Male </option>
-<option value="female"> Female </option>
-</td>
-</tr>
+			<tr>
+				<td> Select Gender </td>
+				<td>
+					<select name="gender">
+						<option value="null"> Select Gender </option>
+						<option value="male"> Male </option>
+						<option value="female"> Female </option>
+				</td>
+			</tr>
 
-<tr>
-<td colspan="2" align="center">
-<input type="submit" value="Submit"/>
-</td>
-</tr>
+			<tr>
+				<td> Image Button </td>
+				<td> <input type="image" name="myimage" src="images/red.png" width="150px" /> </td>
+			</tr>
 
-</table>
+
+
+			<tr>
+				<td> Upload your stuff </td>
+				<td> <input type="file" name="myfile" accept="images/png, images/jpeg" />
+					<input type="file" id="avatar" name="avatar" accept="images/png" />
+				</td>
+			</tr>
+
+
+
+			<tr>
+				<td> Your Address </td>
+				<td> <textarea cols="9" rows="3" /> </textarea> </td>
+			</tr>
+
+
+
+			<tr>
+				<td> Radio Buttons </td>
+				<td>
+					<input type="radio" name="gender" value="male" checked="checked" /> Male
+					<input type="radio" name="gender" value="female" />	Female
+					<input type="radio" name="gender" value="other" />  Other
+				</td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Submit" />
+				</td>
+			</tr>
+
+		</table>
 </body>
+
 </html>
