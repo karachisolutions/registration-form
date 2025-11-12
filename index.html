@@ -28,7 +28,7 @@
 
 			<tr>
 				<td> Confirm Password </td>
-				<td> <input type="password" name="user_confirm_password" /> </td>
+				<td> <input type="password" name="user_confirm_password" required="required" /> </td>
 			</tr>
 
 			<tr>
@@ -72,7 +72,7 @@
 
 			<tr>
 				<td> Your Address </td>
-				<td> <textarea cols="9" rows="3" /> </textarea> </td>
+				<td> <textarea cols="9" rows="3" required="required" /> </textarea> </td>
 			</tr>
 
 
@@ -88,10 +88,23 @@
 
 
 			<tr>
+				<td colspan="2">
+				<fieldset>
+					<legend> Contact Details </legend>
+					<label>Your Email</label>
+					<label><input type="email" name="user_email2" placeholder="email@yourdomain.com" required="required"/></label>
+					<label>Your Phone Number</label>
+					<label><input type="Number" name="user_phone_number" placeholder="03331234567" required="required"></label>
+				</fieldset>	
+				</td>
+			</tr>
+			
+			<tr>
 				<td colspan="2" align="center">
 					<input type="submit" value="Submit" />
 				</td>
 			</tr>
+
 
 		</table>
 </body>
